@@ -6,3 +6,7 @@ iTunes | Server
 # Help
 
 # To-do
+Following things are to be implemented next:
+
+* sending
+* 
