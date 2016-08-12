@@ -74,7 +74,7 @@ Die Prioritäten für Log-Einträge entsprechen den Un*x-Syslog Leveln und laute
 6: Informational
 7: Debug
 
-# To-do:
+# To-do
 Following things are to be implemented next:
 
 * sending
