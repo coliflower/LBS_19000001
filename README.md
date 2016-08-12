@@ -77,7 +77,7 @@ Die Prioritäten für Log-Einträge entsprechen den Un*x-Syslog Leveln und laute
 # To-do
 Following things are to be implemented next:
 
-* sending
+* sending UDP to UDP-listener
 * 
 
 # Warranty | Guarantee
