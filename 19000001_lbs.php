@@ -9,6 +9,8 @@ First release
 V 0.1.1, May 15th, 2016
 Some  addaptations ... there is a need to re-structure the logic-site/connection between the LBS.
 
+V
+
 
 #Zweck:
 Sinnvoll nur auf Apple, da Apple-Skripte ... zur Steuerung von iTunes verwendet werden.
