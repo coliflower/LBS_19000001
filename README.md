@@ -54,7 +54,7 @@ Beschreibung für die Konfiguration von Tune?Instructor liegt in der 19000001_lb
 <b>E15</b>: NAME of the JSON-file of "track".<br>
 </dd>
 
-<dt>Outpunts ...</dt>
+<dt>Outputs ...</dt>
 <dd>
 <b>A1</b>: LINK: bei Modus FILE ein SHARE und bei Modus HTTP ein URL.<br>
 <b>A10</b>: MODUS: darf nicht leer sein - entweder "file" oder "http".<br>
