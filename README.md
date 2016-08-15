@@ -17,22 +17,26 @@ Edomi | iTunes | Server
 
 # Beschreibung
 
-**Zweck:**
-Sinnvoll nur auf Apple, da Apple-Skripte ... zur Steuerung von iTunes verwendet werden.
-Neben diesem LBS "Server" werden auch die LBS "Player", "Track" und "AirPlay" sowie optional "Playlist"
-und "eq" benötigt.
+<dl>
+<dt>Purpose ...</dt>
+<dd>To be abele to communicate between Edomi-Server and iTunes.
+In that current version only information receiving (from iTunes) is possible.
+After implementation of UDP-lstener in Tune-Insturctor, sending of commands to iTunes will be possible, too
+Other version of LBS19000xxx is able to communicate between Edomi-Server and iTunes via Apple-Scripts, only.
+Beside of that LBS (Server), other LBS are ##needed##: "**player**", "**track**" and "**airplay**" - otional "**playlist**" and "**eq**".</dd>
 
-**Benötigte Dateien:**
-Apache-WebServer am Mac aktivieren und konfigurieren ... Mac-User ist das Zielverzeichnis.
+<dt>Needed files ...</dt>
+<dd>Apache-WebServer am Mac aktivieren und konfigurieren ... Mac-User ist das Zielverzeichnis.
 Apple-Skripte - das Installationspaket ist unter folgendem Link zu finden: http://ipfelgruen.de/forum/software/skripte/eigene-tools-und-gadgets/2283-itunes-und-airplay-über-webserver-steuern
 Ursprünglich wurden die Skripte für den GIRA-HS4 und EibPC entwickelt/angepasst (Senden/Empfangen) - diser LBS 19000001 kann die Skripte zur Steuerung von iTunes verwenden,
 die Implementierung wird im LBS "Player" umgesetzt, als Rückmeldung werden die JSON-Dateien benötigt.
 Hier auch ein Danke an Michael für die großartige Unterstützung und Perfektionierung der Aplle-Skripte sowie der einfachen Installationsroutine.
 Für die Generierung benötigte JSON-Dateien bitte entweder eine individuelle Lösung entwickeln ODER den Tune?Instructor installieren (www.tune-instructor.de).
 An dieser Stelle noch mein Dank an Tibor, den Entwickler von Tune?Instructor der das EXPORT (JSON-Dateien) implementiert hat.
-Beschreibung für die Konfiguration von Tune?Instructor liegt in der 19000001_lbs.ZIP-Datei im Downloadbereich.
+Beschreibung für die Konfiguration von Tune?Instructor liegt in der 19000001_lbs.ZIP-Datei im Downloadbereich.</dd>
 
-**Eingänge:**
+<dt>Inputs ...</dt>
+<dd>
 E1: TRIGGER: Systemzeit (KO 5) = 1 Sekunde, andere Trigger je nach Bedarf.
 E2: DEBUG: Standard = 4.
 E3: IP-ADRESSE: des Zielsystems auf dem der WebServer installiert ist und die benötigte Dateien liegen (am Mac).
@@ -43,9 +47,10 @@ E11: NAME der JSON-Datei für den String "Player".
 E12: NAME der JSON-Datei für den String "Airplay".
 E13: NAME der JSON-Datei für den String "Playlists".
 E14: NAME der JSON-Datei für den String "eq".
-E15: NAME der JSON-Datei für den String "Track".
+E15: NAME der JSON-Datei für den String "Track".</dd>
 
-**Ausgänge:**
+<dt>Outpunts ...</dt>
+<dd>
 A1: LINK: bei Modus FILE ein SHARE und bei Modus HTTP ein URL.
 A10: MODUS: darf nicht leer sein - entweder "file" oder "http".
 A11: JSON-String für den LBS "Player".
@@ -53,6 +58,8 @@ A12: JSON-String für den LBS "Airplays".
 A13: JSON-String für den LBS "Playlists".
 A14: JSON-String für den LBS "eq".
 A15: JSON-String für den LBS "Track".
+</dd>
+</dl>
 
 **http/file:**
 E10: wenn "file" dann Zugriff auf JSON + JPG über NFS-Freigabe in EDOMI (muss vorher erstellt werden).
